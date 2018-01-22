@@ -1,0 +1,8 @@
+{
+  "name": "prof-frisby",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/uwinkler/prof-frisby.git",
+  "author": "Ulrich Winkler <uli.winkler@gmail.com>",
+  "license": "MIT"
+}
