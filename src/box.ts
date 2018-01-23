@@ -1,4 +1,4 @@
-class Box<T> {
+export class Box<T> {
   constructor(private x: T) {}
 
   static of<T>(x: T) {
@@ -9,12 +9,16 @@ class Box<T> {
     return Box.of(func(this.x));
   }
 
+  /**
+   * Get the value out of the box
+   */
   fold() {
     return this.x;
   }
 
   /**
-   * Another way to fold
+   * Another way to fold.
+   *
    * @see fold()
    */
   get() {

@@ -9,8 +9,8 @@
     "removeComments": false,
     "noImplicitAny": false,
     "typeRoots": ["node_modules/@types"],
-    "types": ["node", "core-js", "jest"],
+    "types": ["node", "jasmine", "core-js", "jest"],
     "outDir": "build"
   },
-  "include": ["**/*.ts", "node_modules/@types"]
+  "include": ["node_modules/@types"]
 }
