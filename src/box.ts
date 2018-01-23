@@ -9,18 +9,15 @@ class Box<T> {
     return Box.of(func(this.x));
   }
 
-  get() {
+  fold() {
     return this.x;
   }
+
+  /**
+   * Another way to fold
+   * @see fold()
+   */
+  get() {
+    return this.fold();
+  }
 }
-
-let state = 1;
-
-const multiplyByTwo = x => x * 2;
-
-const newState = Box.of(state)
-  .map(s => s * 2)
-  .map(s => s + 1)
-  .get();
-
-state = newState;
