@@ -1,4 +1,4 @@
-import { Left, Right, fromNullable } from "../";
+import { fromNullable } from "../";
 
 describe("Either", () => {
   test("color test", () => {
