@@ -10,13 +10,24 @@
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   },
   "scripts": {
-    "test:watch": "jest --cache --watch"
+    "build": "tsc",
+    "test": "jest",
+    "watch:test": "jest --cache --watch"
   },
   "dependencies": {
+    "@types/core-js": "^0.9.46",
     "@types/jest": "^22.0.1",
+    "@types/node": "^9.3.0",
     "jest": "^22.1.4",
     "ts-jest": "^22.0.1",
     "typescript": "^2.6.2"

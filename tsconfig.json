@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": false,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "baseUrl": "src",
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
@@ -9,8 +13,17 @@
     "removeComments": false,
     "noImplicitAny": false,
     "typeRoots": ["node_modules/@types"],
-    "types": ["node", "jasmine", "core-js", "jest"],
-    "outDir": "build"
+    "types": ["node", "core-js", "jest"],
+    "outDir": "lib",
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noEmitHelpers": true,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
-  "include": ["node_modules/@types"]
+  "exclude": ["node_modules", "build", "coverage"]
+  // "include": ["node_modules/@types"]
 }
